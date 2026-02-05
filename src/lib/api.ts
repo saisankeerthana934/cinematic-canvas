@@ -62,7 +62,8 @@
 //       return false;
 //     }
 //   };
-import { API_BASE_URL } from "./config";
+//import { API_BASE_URL } from "./config";
+const API_BASE_URL = "https://cinema-backend-lak2.onrender.com";
 
 // ✅ FIX 1: Define the full path to the projects endpoint
 // This ensures we are always talking to /api/projects, not just /api
