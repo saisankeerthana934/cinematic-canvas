@@ -69,8 +69,10 @@ export const generateStoryScript = async (genre: string, idea: string) => {
           { role: "system", content: systemPrompt },
           { role: "user", content: `Idea: ${idea}` }
         ],
-        response_format: { type: "json_object" },
-      });
+      //   response_format: { type: "json_object" }, { timeout: 40000 });
+      // // });
+      response_format: { type: "json_object" },
+      }, { timeout: 40000 });
 
       const content = completion.choices[0].message.content;
       if (content) {
